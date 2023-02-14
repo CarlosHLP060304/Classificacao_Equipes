@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Video {
+public class Main {
     public static int nEquipes = 10;
     public static Random rd = new Random();
 
@@ -32,14 +32,14 @@ public class Video {
                         + "\n");
         int z = 1;
         for (int index = 0; index < nEquipes; index++) {
-            System.out.println("\t                        " + z + "º LUGAR");
+            System.out.println("\t                        " + z + "Âº LUGAR");
             System.out.println("EQUIPE: " + equipesAntesDasFinais[0][index] + "\n");
-            System.out.println("PONTUAÇÃO ACUMULADA DAS PARTIDAS : " + equipesAntesDasFinais[1][index] + "\n");
+            System.out.println("PONTUAÃ‡ÃƒO ACUMULADA DAS PARTIDAS : " + equipesAntesDasFinais[1][index] + "\n");
             System.out.println("DESIGN: " + equipesAntesDasFinais[2][index] + "\n");
             System.out.println(" ------------------------------------------------------------------------------");
             z++;
         }
-        System.out.println("As três melhores equipes da competição são :\t" + equipesAntesDasFinais[0][0] + ", "
+        System.out.println("As trÃªs melhores equipes da competiÃ§Ã£o sÃ£o :\t" + equipesAntesDasFinais[0][0] + ", "
                 + equipesAntesDasFinais[0][1] + " e " + equipesAntesDasFinais[0][2]+ "\n");
         System.out.println(" --------------------------------------------------------------------------------------------------\n");
         
@@ -65,37 +65,37 @@ public class Video {
                     System.out.println("EQUIPE " + equipesFinais[0][i] + " VS " + equipesFinais[0][j]);
                     if (pontuacaoBatalhaEquipeIndiceInferior > pontuacaoBatalhaEquipeIndiceSuperior) {
                         System.out.println("Equipe vencedora: " + equipesFinais[0][i] +"\n");
-                        System.out.println("Pontuação equipe vencedora: " + pontuacaoBatalhaEquipeIndiceInferior);
+                        System.out.println("PontuaÃ§Ã£o equipe vencedora: " + pontuacaoBatalhaEquipeIndiceInferior);
                         System.out.println("Nota design equipe vencedora: " + equipesFinais[2][i]);
-                        System.out.println("Pontuação equipe perdedora: " + pontuacaoBatalhaEquipeIndiceSuperior);
+                        System.out.println("PontuaÃ§Ã£o equipe perdedora: " + pontuacaoBatalhaEquipeIndiceSuperior);
                         System.out.println("Nota design equipe perdedora: " + equipesFinais[2][j]+"\n");
                         pontuacao[i] += 2;
                     } else if (pontuacaoBatalhaEquipeIndiceInferior < pontuacaoBatalhaEquipeIndiceSuperior) {
                         System.out.println("Equipe vencedora: " + equipesFinais[0][j] +"\n");
-                        System.out.println("Pontuação equipe vencedora: " + pontuacaoBatalhaEquipeIndiceSuperior);
+                        System.out.println("PontuaÃ§Ã£o equipe vencedora: " + pontuacaoBatalhaEquipeIndiceSuperior);
                         System.out.println("Nota design equipe vencedora: " + equipesFinais[2][j]);
-                        System.out.println("Pontuação equipe perdedora: " + pontuacaoBatalhaEquipeIndiceInferior);
+                        System.out.println("PontuaÃ§Ã£o equipe perdedora: " + pontuacaoBatalhaEquipeIndiceInferior);
                         System.out.println("Nota design equipe perdedora: " + equipesFinais[2][i]+"\n");
                         pontuacao[j] += 2;
                     } else if ((int) equipesFinais[2][i] > (int) equipesFinais[2][j]) {
                         System.out.println("Equipe vencedora: " + equipesFinais[0][i] +"\n");
-                        System.out.println("Pontuação equipe vencedora: " + pontuacaoBatalhaEquipeIndiceInferior);
+                        System.out.println("PontuaÃ§Ã£o equipe vencedora: " + pontuacaoBatalhaEquipeIndiceInferior);
                         System.out.println("Nota design equipe vencedora: " + equipesFinais[2][i]);
-                        System.out.println("Pontuação equipe perdedora: " + pontuacaoBatalhaEquipeIndiceSuperior);
+                        System.out.println("PontuaÃ§Ã£o equipe perdedora: " + pontuacaoBatalhaEquipeIndiceSuperior);
                         System.out.println("Nota design equipe perdedora: " + equipesFinais[2][j]+"\n");
                         pontuacao[i] += 1;
                     } else if ((int) equipesFinais[2][i] < (int) equipesFinais[2][j]) {
                         System.out.println("Equipe vencedora: " + equipesFinais[0][j] +"\n");
-                        System.out.println("Pontuação equipe vencedora: " + pontuacaoBatalhaEquipeIndiceSuperior);
+                        System.out.println("PontuaÃ§Ã£o equipe vencedora: " + pontuacaoBatalhaEquipeIndiceSuperior);
                         System.out.println("Nota design equipe vencedora: " + equipesFinais[2][j]);
-                        System.out.println("Pontuação equipe perdedora: " + pontuacaoBatalhaEquipeIndiceInferior);
+                        System.out.println("PontuaÃ§Ã£o equipe perdedora: " + pontuacaoBatalhaEquipeIndiceInferior);
                         System.out.println("Nota design equipe perdedora: " + equipesFinais[2][i]+"\n");
                         pontuacao[j] += 1;
                     }else if(equipesFinais[2][i]==equipesFinais[2][j]){
-                        System.out.println("Essas equipes empataram tanto no design quanto na pontuação!\n");
-                        System.out.println("Pontuação da equipe " +equipesFinais[0][i]+ " nessa partida: " + pontuacaoBatalhaEquipeIndiceInferior);
+                        System.out.println("Essas equipes empataram tanto no design quanto na pontuaÃ§Ã£o!\n");
+                        System.out.println("PontuaÃ§Ã£o da equipe " +equipesFinais[0][i]+ " nessa partida: " + pontuacaoBatalhaEquipeIndiceInferior);
                         System.out.println("Nota design equipe " +equipesFinais[0][i] + ": " + equipesFinais[2][i]);
-                        System.out.println("Pontuação da equipe " +equipesFinais[0][j]+ " nessa partida: " + pontuacaoBatalhaEquipeIndiceSuperior);
+                        System.out.println("PontuaÃ§Ã£o da equipe " +equipesFinais[0][j]+ " nessa partida: " + pontuacaoBatalhaEquipeIndiceSuperior);
                         System.out.println("Nota design equipe " +equipesFinais[0][j] + ": " + equipesFinais[2][j]);
                     }
                 }
@@ -106,7 +106,7 @@ public class Video {
         }
 
         System.out.println(
-                "\n\n\n -------------------------------CLASSIFICAÇÃO EQUIPES NAS FINAIS-----------------------------------\n\n\n");
+                "\n\n\n -------------------------------CLASSIFICAÃ‡ÃƒO EQUIPES NAS FINAIS-----------------------------------\n\n\n");
 
         for (int i = 0; i < nEquipes; i++) {
             for (int j = 0; j < nEquipes - 1; j++) {
@@ -127,13 +127,13 @@ public class Video {
         }
          z = 1;
             for (int index = 0; index < nEquipes; index++) {
-                System.out.println("\t                        " + z + "º LUGAR");
+                System.out.println("\t                        " + z + "Âº LUGAR");
                 System.out.println("EQUIPE: " + equipesFinais[0][index] + "\n");
-                System.out.println("PONTUAÇÃO ACUMULADA DAS PARTIDAS  : " + equipesFinais[1][index] + "\n");
+                System.out.println("PONTUAÃ‡ÃƒO ACUMULADA DAS PARTIDAS  : " + equipesFinais[1][index] + "\n");
                 System.out.println("DESIGN: " + equipesFinais[2][index] + "\n");
                 System.out.println(" ------------------------------------------------------------------------------");
                 z++;
             }
-        System.out.println("A equipe vencedora da competição é ".toUpperCase() + equipesFinais[0][0]);
+        System.out.println("A equipe vencedora da competiÃ§Ã£o Ã© ".toUpperCase() + equipesFinais[0][0]);
     }
 }
